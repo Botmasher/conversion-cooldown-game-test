@@ -1,0 +1,36 @@
+Conversion-Cooldown Influence Sim
+
+Description
+
+A bare-bones game to experiment with proposed mechanics for a conversion sim: influence bar, influence abilities, ability cooldown. These notes are for general pre-GDD ideas before and during experimentation.
+
+Details
+
+Work on these variations is being carried out as part of the slow and ongoing progress towards a more general project with the working title "Unto Me". This interactive sketch will use scripted behaviors and prefabs to set up the following situation:
+- two competing players (A and B for our purposes)
+- total point count per player
+- an influence bar between A and B
+  - marker to current value along bar (initially midpoint)
+  - mapping of space to values (-1.0 <= marker <= 1.0)
+  - association of values to player favor (A at -1, B at 1)
+  - bar increasingly favors player (points per unit time) towards bar limits
+- player locations (bases) on the ground
+- target area to influence (target) on the ground
+- influence actions
+  - player can send out a unit to influence target
+  - player can use an ability
+    ?- player can build some sort of upgrade
+    ?- player can use some sort of ability
+  - actions have cooldown time
+    ?- all actions must cooldown when one used (at least initially)
+  - player has one special ability
+    - counted up over time, with rate increasing for certain actions
+    - balance, like maybe increasingly diminishing one player increases their accrual rate
+- set up and tweak the way actions contribute to influence bar
+  - is the general play ever interesting, and why (not)?
+  - which adjustments make play more or less engaging, and why?
+- extras
+  - player obtains resources from influencing
+    - start with
+    - bar marker points, even if less than current influence (incentivize risk)?
+    - eventually can add actions
