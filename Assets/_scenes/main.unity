@@ -139,6 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc1795d91d384e848db000009103885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitName: Shuffler
+  unitKeyCode: 32
+  abilityName: Hop
+  abilityKeyCode: 122
+  specialName: Trounce
+  specialKeyCode: 9
 --- !u!4 &26609210
 Transform:
   m_ObjectHideFlags: 0
@@ -343,9 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749ae54ff557c46aea74acc0a402afac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influenceBar: {fileID: 0}
-  influenceMarker: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 26609208}
 --- !u!1 &1214532272
 GameObject:
   m_ObjectHideFlags: 0

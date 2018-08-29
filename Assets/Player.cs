@@ -8,15 +8,12 @@ public class Player : MonoBehaviour {
 
 	public string unitName;
 	public KeyCode unitKeyCode;
-	void activateUnit ();
 
 	public string abilityName;
 	public KeyCode abilityKeyCode;
-	void activateAbility ();
 
 	public string specialName;
 	public KeyCode specialKeyCode;
-	void activateSpecial();
 
 	Dictionary<KeyCode, string> actionKeyCodes = new Dictionary<KeyCode, string> ();
 	Dictionary<string, System.Action> actionActivations = new Dictionary<string, System.Action> ();
@@ -36,6 +33,18 @@ public class Player : MonoBehaviour {
 				actionActivations [entry.Value] ();
 			}
 		}
+	}
+
+	void activateUnit () {
+		Debug.Log ("Activating unit!");
+	}
+
+	void activateAbility () {
+		Debug.Log ("Activating ability!");
+	}
+
+	void activateSpecial () {
+		Debug.Log ("Activating special!");
 	}
 
 }
